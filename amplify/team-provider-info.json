@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-urlshortener-dev-233048-authRole",
+      "UnauthRoleArn": "arn:aws:iam::023604664693:role/amplify-urlshortener-dev-233048-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::023604664693:role/amplify-urlshortener-dev-233048-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-urlshortener-dev-233048-deployment",
+      "UnauthRoleName": "amplify-urlshortener-dev-233048-unauthRole",
+      "StackName": "amplify-urlshortener-dev-233048",
+      "StackId": "arn:aws:cloudformation:eu-central-1:023604664693:stack/amplify-urlshortener-dev-233048/cc1fdf80-a472-11eb-be31-06062435af2a",
+      "AmplifyAppId": "dfb8dr49xkgkf"
+    },
+    "categories": {
+      "auth": {
+        "urlshortener93c7251b": {
+          "userPoolId": "eu-central-1_u8IDyF30X",
+          "userPoolName": "BusinessUsers",
+          "webClientId": "7o5s8mojga7ko7ne1hrtquslhs",
+          "nativeClientId": "5sblj6mgkvdnu76o1kq30v1add"
+        }
+      }
+    }
+  }
+}

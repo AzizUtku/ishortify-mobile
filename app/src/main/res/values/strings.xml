@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shortify</string>
+
+    <string name="success_rate">Success Rate: %1$s\%%</string>
+    <string name="player_name">%1$s %2$s</string>
+    <string name="next_player">Next player</string>
+    <string name="btn_change_drawing_type">Change drawing type</string>
+    <string name="desc_current_method_1">Current method: Find shots where are at exactly same coordinates and put a hexagon for them.</string>
+    <string name="desc_current_method_2">Current method: Divide into equal parts and put hexagons.</string>
+    <string name="desc_loading">Loading...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

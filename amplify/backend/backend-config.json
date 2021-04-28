@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "urlshortener93c7251b": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

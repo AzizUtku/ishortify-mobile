@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.fragments.home.HomeFragment">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <ImageView
+                android:id="@+id/img_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5"
+                app:srcCompat="@drawable/ic_shorten_link" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:letterSpacing="0.05"
+                android:text="Shorten Any Links"
+                android:textColor="#000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_header" />
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Build and protect your links using powerful and recognizble short links"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <Space
+                android:id="@+id/space_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_desc"
+                app:layout_constraintWidth_percent="0.1" />
+
+            <TextView
+                android:id="@+id/txt_key_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="https://shortify.tk/"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/edt_key"
+                app:layout_constraintStart_toEndOf="@id/space_start"
+                app:layout_constraintTop_toTopOf="@id/edt_key" />
+
+            <EditText
+                android:id="@+id/edt_key"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/bg_edt"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="optional"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="#ACAEB1"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/space_end"
+                app:layout_constraintStart_toEndOf="@id/txt_key_prefix"
+                app:layout_constraintTop_toBottomOf="@id/txt_desc" />
+
+            <Space
+                android:id="@+id/space_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_desc"
+                app:layout_constraintWidth_percent="0.1" />
+
+            <EditText
+                android:id="@+id/edt_link"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_edt"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="Type or Paste your link"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="#ACAEB1"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/btn_shorten"
+                app:layout_constraintStart_toEndOf="@id/space_start"
+                app:layout_constraintTop_toBottomOf="@id/edt_key" />
+
+            <Button
+                android:id="@+id/btn_shorten"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="15sp"
+                android:background="@drawable/bg_btn"
+                android:text="Shorten"
+                app:layout_constraintBottom_toBottomOf="@id/edt_link"
+                app:layout_constraintEnd_toStartOf="@id/space_end"
+                app:layout_constraintStart_toEndOf="@id/edt_link"
+                app:layout_constraintTop_toTopOf="@id/edt_link" />
+
+            <TextView
+                android:id="@+id/txt_developer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Are you developer or business?"
+                android:textAlignment="textStart"
+                android:textColor="#B3000000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_link" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
